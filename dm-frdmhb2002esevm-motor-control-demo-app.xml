@@ -1,0 +1,30 @@
+<data:item xmlns:data="data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="data ../../xsd/alp.xsd" type="demo" format="cmsis" versionSchema="1.0.0" name="frdmhb2002esevm motor control demo app" uuid="80901437-d3e9-4e10-acd7-1809a8d66720" id="dm-frdm33926pnbevm-motor-control-driver-demo-app-">
+    <display_title>
+        FRDMHB2002ESEVM: Driver and demo app for MC33HB2002ES H-bridge motor controller
+    </display_title>
+    <overview>
+        <![CDATA[This demo application provides various Motor Control interfaces like fault detection (over, under voltage and active current limits etc ) , Fault detection control and Motor can be either control by PWM or SPI.  Using PWM speed can be controlled by changing the duty cycles.]]>
+    </overview>
+    <toolchains>
+        <toolchain name="mcux"></toolchain>
+    </toolchains>
+    <families>
+        <family name="mcx"></family>
+    </families>
+    <nxp_compatible_hw>
+        <hw id="FRDM-MCXN947"></hw>
+        <hw id="FRDM-MCXA153"></hw>
+    </nxp_compatible_hw>
+    <nxp_ebh_hw>
+        <ebh id="nxp_frdm_hb2002esevm"></ebh>
+    </nxp_ebh_hw>
+    <peripherals>
+        <peripheral name="adc"></peripheral>
+        <peripheral name="gpio"></peripheral>
+        <peripheral name="pwm"></peripheral>
+        <peripheral name="spi"></peripheral>
+    </peripherals>
+    <categories>
+        <category name="motor_control"></category>
+    </categories>
+</data:item>

@@ -1,0 +1,1948 @@
+
+Hardware requirements
+===================
+- Mini/micro C USB cable
+- FRDM-MCXN947 board
+- HB2002ESEVM board 
+- Personal Computer
+
+Board settings
+
+- There are jumpers corresponding to each pins (IN1, IN2, ENBL, DIS, CS_B, SCLK, MOSI, MISO, EX_IN), we can remove particular jumper to 
+  disconnect particular pin and can use external signal.
+  eg. IN1, IN2 etc.
+- To connect external IN1 and IN2, Use jumpers IN1, IN2 by connecting pin 2 nad 3.
+- To make default control for ENBL, DIS, and CS_B Use jumpers ENBL, DIS and CS_B by connecting pin 2 nad 3.
+ 
+
+Prepare the Demo
+===============
+1.  Connect a USB cable between the host PC and the OpenSDA USB port on the target board.
+2.  Open a serial terminal with the following settings:
+    - 115200 baud rate
+    - 8 data bits
+    - No parity
+    - One stop bit
+    - No flow control
+3.  Download the program to the target board.
+4.  Either press the reset button on your board or launch the debugger in your IDE to begin running the demo.
+5.  Connect power supply of voltage range (5.0 V to 28V) to J20. 
+
+Running the demo
+===============
+When the demo runs successfully, you can see the logs printed on the terminal based on the menu options user chooses.
+
+LOGS:
+=============
+
+ ISSDK HC2002 MC driver example demonstration for SPI with interrupt mode.
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 10
+
+ 1. H-bridge control mode 
+
+ 2. Half-bridge control mode 
+
+ Enter your choice :- 2
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 1
+
+ 1.  Setup PWM channel from scratch 
+
+ 2.  Change duty cycle  
+
+ Enter your choice :- 1
+
+ Enter PWM Channel Number (0 or 1) :- 0
+
+ duty cycle (0 to 100 in multiples of 10) :- 50
+
+ Enter Freq in HZ (1500/2000/3000/4000) :- 1500
+
+ Enter Non PWM Channel Level (0/1) :- 1
+
+ PWM Generated, Press enter for main menu 
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 1
+
+ 1.  Setup PWM channel from scratch 
+
+ 2.  Change duty cycle  
+
+ Enter your choice :- 2
+
+ duty cycle (0 to 100 in multiples of 10) :- 30
+
+ PWM Generated, Press enter for main menu 
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 2
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 3
+
+ DeviceID 1 
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 4
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 1
+
+ 1.  Temperature shutdown 
+
+ 2.  Thermal warning 
+
+ 3.  Overcurrent - current limit has been activated 
+
+ 4.  Open load 
+
+ 5.  Short-circuit to ground output 1  
+
+ 6.  Short-circuit to ground output 2  
+
+ 7.  Short-circuit to power output 1  
+
+ 8.  Short-circuit to power output 2  
+
+ 9.  VPWR overvoltag 
+
+ 10. VPWR undervoltage 
+
+ 11. Charge pump undervoltage 
+
+ 12. SPI framing error 
+
+ 13. Exit 
+
+ Enter your choice :- 10
+
+ 1.  Temperature shutdown 
+
+ 2.  Thermal warning 
+
+ 3.  Overcurrent - current limit has been activated 
+
+ 4.  Open load 
+
+ 5.  Short-circuit to ground output 1  
+
+ 6.  Short-circuit to ground output 2  
+
+ 7.  Short-circuit to power output 1  
+
+ 8.  Short-circuit to power output 2  
+
+ 9.  VPWR overvoltag 
+
+ 10. VPWR undervoltage 
+
+ 11. Charge pump undervoltage 
+
+ 12. SPI framing error 
+
+ 13. Exit 
+
+ Enter your choice :- 11
+
+ 1.  Temperature shutdown 
+
+ 2.  Thermal warning 
+
+ 3.  Overcurrent - current limit has been activated 
+
+ 4.  Open load 
+
+ 5.  Short-circuit to ground output 1  
+
+ 6.  Short-circuit to ground output 2  
+
+ 7.  Short-circuit to power output 1  
+
+ 8.  Short-circuit to power output 2  
+
+ 9.  VPWR overvoltag 
+
+ 10. VPWR undervoltage 
+
+ 11. Charge pump undervoltage 
+
+ 12. SPI framing error 
+
+ 13. Exit 
+
+ Enter your choice :- 13
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 4
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 5
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 5
+
+ Charge Pump Under voltage 
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 5
+
+ Under voltage 
+
+ Charge Pump Under voltage 
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 6
+
+ 1.  Temperature shutdown 
+
+ 2.  Thermal warning 
+
+ 3.  Overcurrent - current limit has been activated 
+
+ 4.  Open load 
+
+ 5.  Short-circuit to ground output 1  
+
+ 6.  Short-circuit to ground output 2  
+
+ 7.  Short-circuit to power output 1  
+
+ 8.  Short-circuit to power output 2  
+
+ 9.  VPWR overvoltag 
+
+ 10. VPWR undervoltage 
+
+ 11. Charge pump undervoltage 
+
+ 12. SPI framing error 
+
+ 13. Exit 
+
+ Enter your choice :- 11
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 5
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 4
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 2
+
+ 1.  Temperature shutdown 
+
+ 2.  Thermal warning 
+
+ 3.  Overcurrent - current limit has been activated 
+
+ 4.  Open load 
+
+ 5.  Short-circuit to ground output 1  
+
+ 6.  Short-circuit to ground output 2  
+
+ 7.  Short-circuit to power output 1  
+
+ 8.  Short-circuit to power output 2  
+
+ 9.  VPWR overvoltag 
+
+ 10. VPWR undervoltage 
+
+ 11. Charge pump undervoltage 
+
+ 12. SPI framing error 
+
+ 13. Exit 
+
+ Enter your choice :- 11
+
+ 1.  Temperature shutdown 
+
+ 2.  Thermal warning 
+
+ 3.  Overcurrent - current limit has been activated 
+
+ 4.  Open load 
+
+ 5.  Short-circuit to ground output 1  
+
+ 6.  Short-circuit to ground output 2  
+
+ 7.  Short-circuit to power output 1  
+
+ 8.  Short-circuit to power output 2  
+
+ 9.  VPWR overvoltag 
+
+ 10. VPWR undervoltage 
+
+ 11. Charge pump undervoltage 
+
+ 12. SPI framing error 
+
+ 13. Exit 
+
+ Enter your choice :- 13
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 3
+
+  Error detected  
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 4
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 4
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 3
+
+  Error detected  
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 4
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 5
+
+ Under voltage 
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 6
+
+ 1.  Temperature shutdown 
+
+ 2.  Thermal warning 
+
+ 3.  Overcurrent - current limit has been activated 
+
+ 4.  Open load 
+
+ 5.  Short-circuit to ground output 1  
+
+ 6.  Short-circuit to ground output 2  
+
+ 7.  Short-circuit to power output 1  
+
+ 8.  Short-circuit to power output 2  
+
+ 9.  VPWR overvoltag 
+
+ 10. VPWR undervoltage 
+
+ 11. Charge pump undervoltage 
+
+ 12. SPI framing error 
+
+ 13. Exit 
+
+ Enter your choice :- 10
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 5
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 4
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 3
+
+  NO error detected  
+
+ 1. Enable FS_B (FS_B to become active when fault is active) 
+
+ 2. Disable FS_B 
+
+ 3. Read FS_B 
+
+ 4. Exit 
+
+ Enter your choice :- 4
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 7
+
+ 1. Enable Overvoltage protection 
+
+ 2. Disable Overvoltage protection 
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 7
+
+ 1. Enable Overvoltage protection 
+
+ 2. Disable Overvoltage protection 
+
+ Enter your choice :- 2
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 8
+
+ 1. Enable motor control through SPI 
+
+ 2. Disable motor control through SPI 
+
+ 3. Set virtual Input one (VIN1) 
+
+ 4. Clear virtual Input one (VIN1) 
+
+ 5. Set virtual Input two (VIN2) 
+
+ 6. Clear virtual Input two (VIN2) 
+
+ 7. Exit....Back to main menu 
+
+ Enter your choice :- 1
+
+ 1. Enable motor control through SPI 
+
+ 2. Disable motor control through SPI 
+
+ 3. Set virtual Input one (VIN1) 
+
+ 4. Clear virtual Input one (VIN1) 
+
+ 5. Set virtual Input two (VIN2) 
+
+ 6. Clear virtual Input two (VIN2) 
+
+ 7. Exit....Back to main menu 
+
+ Enter your choice :- 4
+
+ 1. Enable motor control through SPI 
+
+ 2. Disable motor control through SPI 
+
+ 3. Set virtual Input one (VIN1) 
+
+ 4. Clear virtual Input one (VIN1) 
+
+ 5. Set virtual Input two (VIN2) 
+
+ 6. Clear virtual Input two (VIN2) 
+
+ 7. Exit....Back to main menu 
+
+ Enter your choice :- 5
+
+ 1. Enable motor control through SPI 
+
+ 2. Disable motor control through SPI 
+
+ 3. Set virtual Input one (VIN1) 
+
+ 4. Clear virtual Input one (VIN1) 
+
+ 5. Set virtual Input two (VIN2) 
+
+ 6. Clear virtual Input two (VIN2) 
+
+ 7. Exit....Back to main menu 
+
+ Enter your choice :- 3
+
+ 1. Enable motor control through SPI 
+
+ 2. Disable motor control through SPI 
+
+ 3. Set virtual Input one (VIN1) 
+
+ 4. Clear virtual Input one (VIN1) 
+
+ 5. Set virtual Input two (VIN2) 
+
+ 6. Clear virtual Input two (VIN2) 
+
+ 7. Exit....Back to main menu 
+
+ Enter your choice :- 6
+
+ 1. Enable motor control through SPI 
+
+ 2. Disable motor control through SPI 
+
+ 3. Set virtual Input one (VIN1) 
+
+ 4. Clear virtual Input one (VIN1) 
+
+ 5. Set virtual Input two (VIN2) 
+
+ 6. Clear virtual Input two (VIN2) 
+
+ 7. Exit....Back to main menu 
+
+ Enter your choice :- 7
+
+ Motor control using SPI Failed
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 9
+
+ 1. Enable Active Current Limit 
+
+ 2. Disable Active Current Limit 
+
+ 3. Set Active Current Limit 
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 9
+
+ 1. Enable Active Current Limit 
+
+ 2. Disable Active Current Limit 
+
+ 3. Set Active Current Limit 
+
+ Enter your choice :- 3
+
+ Enter I Limit ( 0 to 3 ) 
+1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 10
+
+ 1. H-bridge control mode 
+
+ 2. Half-bridge control mode 
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 10
+
+ 1. H-bridge control mode 
+
+ 2. Half-bridge control mode 
+
+ Enter your choice :- 2
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 11
+
+ Enter Slew Rate ( 0 to 7 )
+5
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 12
+
+ 1. Enable Output using SPI 
+
+ 2. Disable Output using SPI 
+
+ 3. Enable Output using GPIO 
+
+ 4. Disable Output using GPIO [Sleep mode] 
+
+ Enter your choice :- 2
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 10
+
+ 1. H-bridge control mode 
+
+ 2. Half-bridge control mode 
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 12
+
+ 1. Enable Output using SPI 
+
+ 2. Disable Output using SPI 
+
+ 3. Enable Output using GPIO 
+
+ 4. Disable Output using GPIO [Sleep mode] 
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 12
+
+ 1. Enable Output using SPI 
+
+ 2. Disable Output using SPI 
+
+ 3. Enable Output using GPIO 
+
+ 4. Disable Output using GPIO [Sleep mode] 
+
+ Enter your choice :- 3
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 13
+
+ 1. Set Disable pin High [Standby mode]
+
+ 2. Set Disable pin Low  
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 14
+
+ Feedback current 7 
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 14
+
+ Feedback current 0 
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 15
+
+ 1. Reset using ENBL pin 
+
+ 2. Reset using DIS pin 
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 16
+
+ 1. Enable Thermal Management (ILIM derate to ILIM/2 on OT warning) 
+
+ 2. Disable Thermal Management (ILIM derate to ILIM/2 from beginning) 
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 17
+
+ 1. Enable Check for open load on transition from Standby to Normal mode 
+
+ 2. Disable Check for open load on transition from Standby to Normal mode 
+
+ Enter your choice :- 1
+
+ *********** Main Menu ***************
+
+ 1.  Set PWM 
+
+ 2.  Stop PWM 
+
+ 3.  Device ID 
+
+ 4.  FS_B Control 
+
+ 5.  Check faults status 
+
+ 6.  Clear faults status 
+
+ 7.  Over Voltage Protection Control 
+
+ 8.  Motor control using SPI 
+
+ 9.  Active Current Limit Control 
+
+ 10. Input mode Control 
+
+ 11. Set SlewRate for SPI 
+
+ 12. Output Enable Control 
+
+ 13. Disable Control 
+
+ 14. Read feedback current 
+
+ 15. Reset using DIS/ENB 
+
+ 16. Thermal Management Control 
+
+ 17. Check for open load control 
+
+ Enter your choice :- 
